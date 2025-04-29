@@ -1,5 +1,5 @@
-# Firebase Studio
+Este portalfolio fue creado con Next.js y React
 
-This is a NextJS starter in Firebase Studio.
+Para presentar mis conocimientos
 
-To get started, take a look at src/app/page.tsx.
+Realizado el 29 de Abril de 2025
