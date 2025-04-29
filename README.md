@@ -1,2 +1,5 @@
-# portafolio2025
-portafolio digital, un escaparate de mis habilidades técnicas y mi trayectoria académica y profesional
+# Firebase Studio
+
+This is a NextJS starter in Firebase Studio.
+
+To get started, take a look at src/app/page.tsx.
