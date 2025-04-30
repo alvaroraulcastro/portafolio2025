@@ -262,7 +262,7 @@ export default function Home() {
 
         <section className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-3xl font-semibold tracking-tight mb-8 text-center">
-            Conjunto de Herramientas y Tecnologías
+            Conjunto de Herramientas y Tecnologías con las que he trabajado
           </h2>
           {/* Match grid columns with Experiencia Laboral section */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
