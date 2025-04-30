@@ -15,8 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Álvaro Raúl Castro San Martín - Portfolio',
-  description: 'A portfolio showcasing technical skills.',
+  title: 'Álvaro Castro - Desarrollador Full Stack',
+  description: 'Portafolio de Álvaro Castro, Desarrollador Full Stack con experiencia en JavaScript, React, Node.js, PHP, AWS y más. Explora mis proyectos y habilidades.',
+  keywords: ['Desarrollador Full Stack', 'Full Stack Developer', 'Desarrollo Web', 'Web Development', 'JavaScript', 'React', 'Node.js', 'PHP', 'AWS', 'Portfolio', 'Portafolio', 'Álvaro Castro', 'Programador Web'],
+  icons: {
+    icon: '/gear.svg', // Reference the new gear icon
+    // You might want to add other icon types like apple-touch-icon here as well
+  },
 };
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ export function Header() {
               <line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></line>
               <line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></line>
             </svg>
-            <span className="inline-block font-bold">Portfolio</span> {/* Changed text here */}
+            <span className="inline-block font-bold">Portafolio</span> {/* Changed text here */}
           </a>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
