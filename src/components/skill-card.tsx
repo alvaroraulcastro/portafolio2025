@@ -13,15 +13,15 @@ export function SkillCard({ name, icon, description, className }: SkillCardProps
   return (
     <Card
       role="article"
-      className={cn('flex flex-col transition-all hover:shadow-lg bg-card', className)}
+      className={cn('flex flex-col transition-transform duration-200 transform hover:-translate-y-1 hover:shadow-lg bg-card', className)}
     >
       {' '}
       {/* Apply className */}
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 px-6">
         <CardTitle className="text-lg font-medium">{name}</CardTitle>
         {icon}
       </CardHeader>
-      <CardContent className="flex-1">
+      <CardContent className="flex-1 px-6 pb-6">
         <CardDescription>{description}</CardDescription>
       </CardContent>
     </Card>
