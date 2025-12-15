@@ -39,7 +39,9 @@ export function Header() {
                 strokeWidth="16"
               ></line>
             </svg>
-            <span className="inline-block font-semibold text-lg text-primary tracking-wide uppercase">Portafolio</span>
+            <span className="inline-block font-semibold text-lg text-primary tracking-wide uppercase">
+              Portafolio
+            </span>
           </a>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">

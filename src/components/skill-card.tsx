@@ -13,7 +13,10 @@ export function SkillCard({ name, icon, description, className }: SkillCardProps
   return (
     <Card
       role="article"
-      className={cn('flex flex-col transition-transform duration-200 transform hover:-translate-y-1 hover:shadow-lg bg-card', className)}
+      className={cn(
+        'flex flex-col transition-transform duration-200 transform hover:-translate-y-1 hover:shadow-lg bg-card',
+        className
+      )}
     >
       {' '}
       {/* Apply className */}

@@ -12,20 +12,46 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/dialog'; // Import Dialog components
+import { GraduationCap, ShieldCheck, Briefcase, Mail } from 'lucide-react';
+import { HERO, SUMMARY, CONTACT, SKILLS, SUGGESTED_PROJECTS } from '@/data/portfolio-content';
 import {
-  Code,
-  GitBranch,
-  Database,
-  Cloud,
-  MonitorSmartphone,
-  Settings,
-  GraduationCap,
-  ShieldCheck,
-  Smartphone,
-  Server,
-  Briefcase,
-  Mail,
-} from 'lucide-react';
+  JsIcon,
+  ReactIcon,
+  NextIcon,
+  TsIcon,
+  TailwindIcon,
+  PhpIcon,
+  LaravelIcon,
+  CodeIgniterIcon,
+  PythonIcon,
+  AngularIcon,
+  WordpressIcon,
+  PrestaIcon,
+  ApiIcon,
+  NodeIcon,
+  GitIcon,
+  GithubIcon,
+  BitbucketIcon,
+  SqlIcon,
+  MysqlIcon,
+  PostgresIcon,
+  SqlServerIcon,
+  NoSqlIcon,
+  MongoIcon,
+  DynamoIcon,
+  FirebaseIcon,
+  AwsIcon,
+  LambdaIcon,
+  S3Icon,
+  ServerlessIcon,
+  CiCdIcon,
+  BitbucketPipelinesIcon,
+  ConfluenceIcon,
+  JiraIcon,
+  DockerIcon,
+  AndroidIcon,
+  ResponsiveIcon,
+} from '@/components/icons/tech-icons';
 
 // Define interface for Skill
 interface Skill {
@@ -56,189 +82,189 @@ interface WorkExperience {
 const skills: Skill[] = [
   {
     name: 'JavaScript',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <JsIcon className="h-8 w-8" />,
     description: 'Construyendo aplicaciones web dinámicas e interactivas.',
   },
   {
     name: 'React',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <ReactIcon className="h-8 w-8" />,
     description: 'Desarrollando interfaces de usuario modernas basadas en componentes.',
   },
   {
     name: 'Next.js',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <NextIcon className="h-8 w-8" />,
     description: 'Framework de React para producción con renderizado del lado del servidor.',
   },
   {
     name: 'TypeScript',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <TsIcon className="h-8 w-8" />,
     description: 'JavaScript con tipado estático para mayor robustez.',
   },
   {
     name: 'TailwindCSS',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <TailwindIcon className="h-8 w-8" />,
     description: 'Framework CSS utility-first para diseño rápido.',
   },
   {
     name: 'Node.js',
-    icon: <Server className="h-8 w-8 text-primary" />,
+    icon: <NodeIcon className="h-8 w-8" />,
     description: 'Creando aplicaciones y APIs escalables del lado del servidor.',
   },
   {
     name: 'PHP',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <PhpIcon className="h-8 w-8" />,
     description: 'Desarrollo backend robusto y aplicaciones web dinámicas.',
   },
   {
     name: 'Laravel',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <LaravelIcon className="h-8 w-8" />,
     description: 'Framework PHP elegante para desarrollo web moderno.',
   },
   {
     name: 'CodeIgniter',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <CodeIgniterIcon className="h-8 w-8" />,
     description: 'Framework PHP ligero para desarrollo rápido.',
   },
   {
     name: 'Python',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <PythonIcon className="h-8 w-8" />,
     description: 'Lenguaje versátil para backend, scripting y más.',
   },
   {
     name: 'Angular',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <AngularIcon className="h-8 w-8" />,
     description: 'Creación de aplicaciones web complejas y de gran escala.',
   },
   {
     name: 'Git',
-    icon: <GitBranch className="h-8 w-8 text-primary" />,
+    icon: <GitIcon className="h-8 w-8" />,
     description: 'Control de versiones y flujos de trabajo de desarrollo colaborativo.',
   },
   {
     name: 'Bitbucket',
-    icon: <GitBranch className="h-8 w-8 text-primary" />,
+    icon: <BitbucketIcon className="h-8 w-8" />,
     description: 'Plataforma de Git para gestión de código y CI/CD.',
   },
   {
     name: 'GitHub',
-    icon: <GitBranch className="h-8 w-8 text-primary" />,
+    icon: <GithubIcon className="h-8 w-8" />,
     description: 'Plataforma de Git para alojamiento de código y colaboración.',
   },
   {
     name: 'SQL',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <SqlIcon className="h-8 w-8" />,
     description: 'Lenguaje estándar para bases de datos relacionales.',
   },
   {
     name: 'MySQL',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <MysqlIcon className="h-8 w-8" />,
     description: 'Sistema de gestión de bases de datos relacionales popular.',
   },
   {
     name: 'PostgreSQL',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <PostgresIcon className="h-8 w-8" />,
     description: 'Gestión de bases de datos relacionales robustas y escalables.',
   },
   {
     name: 'SQL Server',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <SqlServerIcon className="h-8 w-8" />,
     description: 'Administración y desarrollo de bases de datos empresariales.',
   },
   {
     name: 'NoSQL',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <NoSqlIcon className="h-8 w-8" />,
     description: 'Bases de datos no relacionales para flexibilidad.',
   },
   {
     name: 'MongoDB',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <MongoIcon className="h-8 w-8" />,
     description: 'Base de datos NoSQL para almacenamiento de datos flexible.',
   },
   {
     name: 'DynamoDB',
-    icon: <Database className="h-8 w-8 text-primary" />,
+    icon: <DynamoIcon className="h-8 w-8" />,
     description: 'Base de datos NoSQL clave-valor de AWS.',
   },
   {
     name: 'Firebase',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <FirebaseIcon className="h-8 w-8" />,
     description: 'Backend como Servicio para construir aplicaciones web y móviles.',
   },
   {
     name: 'AWS',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <AwsIcon className="h-8 w-8" />,
     description: 'Despliegue y gestión de aplicaciones en la nube de Amazon Web Services.',
   },
   {
     name: 'Lambda',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <LambdaIcon className="h-8 w-8" />,
     description: 'Servicio de cómputo serverless de AWS.',
   },
   {
     name: 'API Gateway',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <ApiIcon className="h-8 w-8" />,
     description: 'Servicio de AWS para crear y gestionar APIs.',
   },
   {
     name: 'S3',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <S3Icon className="h-8 w-8" />,
     description: 'Almacenamiento de objetos escalable de AWS.',
   },
   {
     name: 'Serverless Framework',
-    icon: <Cloud className="h-8 w-8 text-primary" />,
+    icon: <ServerlessIcon className="h-8 w-8" />,
     description: 'Framework para construir y desplegar aplicaciones serverless.',
   },
   {
     name: 'CI/CD',
-    icon: <Settings className="h-8 w-8 text-primary" />,
+    icon: <CiCdIcon className="h-8 w-8" />,
     description: 'Integración y despliegue continuo para automatización.',
   },
   {
     name: 'Bitbucket Pipelines',
-    icon: <GitBranch className="h-8 w-8 text-primary" />,
+    icon: <BitbucketPipelinesIcon className="h-8 w-8" />,
     description: 'Servicio de CI/CD integrado en Bitbucket.',
   },
   // { name: "GitHub Actions", icon: <GitBranch className="h-8 w-8 text-primary" />, description: "Automatización de flujos de trabajo directamente desde GitHub." },
   {
     name: 'WordPress',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <WordpressIcon className="h-8 w-8" />,
     description: 'Sistema de gestión de contenidos (CMS) popular.',
   },
   {
     name: 'PrestaShop',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <PrestaIcon className="h-8 w-8" />,
     description: 'Plataforma de e-commerce de código abierto.',
   },
   // { name: "Shopify", icon: <Code className="h-8 w-8 text-primary" />, description: "Plataforma de e-commerce alojada." },
   {
     name: 'Confluence',
-    icon: <Settings className="h-8 w-8 text-primary" />,
+    icon: <ConfluenceIcon className="h-8 w-8" />,
     description: 'Herramienta de colaboración y documentación.',
   },
   {
     name: 'Jira',
-    icon: <Settings className="h-8 w-8 text-primary" />,
+    icon: <JiraIcon className="h-8 w-8" />,
     description: 'Herramienta de seguimiento de problemas y gestión de proyectos.',
   },
   {
     name: 'Docker',
-    icon: <Server className="h-8 w-8 text-primary" />,
+    icon: <DockerIcon className="h-8 w-8" />,
     description: 'Plataforma de contenedores para empaquetar y desplegar aplicaciones.',
   },
   {
     name: 'Android',
-    icon: <Smartphone className="h-8 w-8 text-primary" />,
+    icon: <AndroidIcon className="h-8 w-8" />,
     description: 'Desarrollo de aplicaciones móviles nativas para el ecosistema Android.',
   },
   {
     name: 'Responsive Design',
-    icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
+    icon: <ResponsiveIcon className="h-8 w-8" />,
     description: 'Asegurando que las aplicaciones se vean bien en todos los dispositivos.',
   },
   {
     name: 'REST APIs',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <ApiIcon className="h-8 w-8" />,
     description: 'Diseñando y consumiendo servicios web RESTful.',
   },
   {
@@ -437,12 +463,9 @@ export default function Home() {
       <main className="flex-1 container mx-auto px-4 py-12 md:px-6 lg:py-16">
         <section className="text-center mb-16 animate-fade-in-down">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            Álvaro Raúl Castro
+            {HERO.title}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Bienvenido a mi portafolio digital, un escaparate de mis habilidades técnicas y mi
-            trayectoria académica y profesional.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{HERO.subtitle}</p>
         </section>
 
         {/* About Me Section */}
@@ -453,13 +476,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold tracking-tight mb-6 text-center">Sobre mí</h2>
           <Card className="bg-card p-6 shadow-lg border border-border">
             <CardContent className="text-card-foreground p-0 space-y-4">
-              <p className="leading-relaxed text-center">
-                Con 9+ años de experiencia en desarrollo de software, especializado en arquitecturas
-                escalables (microservicios, Serverless) y modernización de sistemas legacy. Líder
-                técnico en equipos ágiles (Scrum) con foco en calidad, automatización y mejora
-                continua. Apasionado por soluciones innovadoras que unen eficiencia técnica con
-                impacto empresarial.
-              </p>
+              <p className="leading-relaxed text-center">{SUMMARY}</p>
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-center">Experiencia Relevante</h3>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground">
@@ -485,7 +502,7 @@ export default function Home() {
           </Card>
           {/* Contact Icons */}
           <div className="flex justify-center items-center space-x-6 mt-6">
-            <Link href="mailto:alvaroraulcastrosm@gmail.com" aria-label="Send Email">
+            <Link href={`mailto:${CONTACT.email}`} aria-label="Send Email">
               <Mail className="h-8 w-8 text-primary hover:text-primary/80 transition-colors" />
             </Link>
           </div>
@@ -503,6 +520,69 @@ export default function Home() {
                 {...skill}
                 className="transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
               />
+            ))}
+          </div>
+        </section>
+
+        {/* Habilidades recomendadas para Fullstack + AWS (desde data) */}
+        <section className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.22s' }}>
+          <h2 className="text-3xl font-semibold tracking-tight mb-6 text-center">
+            Habilidades (Fullstack + AWS)
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {Object.entries(SKILLS).map(([category, items]) => (
+              <Card key={category} className="bg-card p-4">
+                <CardHeader className="p-0 pb-2">
+                  <CardTitle className="text-lg font-semibold mt-1">{category}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    {Array.isArray(items) &&
+                      items.map((it: string, idx: number) => (
+                        <li key={idx} className="text-sm">
+                          {it}
+                        </li>
+                      ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Proyectos sugeridos para mostrar trabajo técnico (si no hay proyectos personales) */}
+        <section className="mb-16 animate-fade-in-up" style={{ animationDelay: '0.24s' }}>
+          <h2 className="text-3xl font-semibold tracking-tight mb-8 text-center">Proyectos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SUGGESTED_PROJECTS.map((p, i) => (
+              <Card key={i} className="bg-card p-4">
+                <CardHeader className="p-0 pb-2">
+                  <CardTitle className="text-lg font-semibold">{p.title}</CardTitle>
+                  <CardDescription className="text-sm text-muted-foreground">
+                    {p.problem}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm font-medium mb-2">Stack:</p>
+                  <ul className="list-disc list-inside text-muted-foreground">
+                    {p.stack.map((s: string, idx: number) => (
+                      <li key={idx} className="text-sm">
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-3">
+                    <p className="text-sm font-medium mb-1">Deliverables:</p>
+                    <ul className="list-disc list-inside text-muted-foreground">
+                      {p.deliverables.map((d: string, idx: number) => (
+                        <li key={idx} className="text-sm">
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </section>

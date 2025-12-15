@@ -4,7 +4,8 @@
 
 /* Paleta modernizada y más seria: tonos neutros y azul marino como primario */
 body {
-  font-family: var(--font-geist-sans), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial;
 }
 
 @layer base {
@@ -66,7 +67,10 @@ body {
   }
 
   /* Tipografías y encabezados */
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: rgb(var(--foreground));
     margin: 0;
   }
@@ -78,7 +82,7 @@ body {
   }
 
   :focus {
-    outline: 2px solid rgba(0,0,0,0);
-    box-shadow: 0 0 0 4px rgba(29,78,216,0.08);
+    outline: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.08);
   }
 }
